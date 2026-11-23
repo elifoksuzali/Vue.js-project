@@ -89,17 +89,3 @@ npm run lint
 ```
 
 `npm run serve` sonrası uygulama genellikle `http://localhost:8080` adresinde açılır.
-
----
-
-## ⚙️ Notlar
-
-- `src/main.js` içinde örnek bir **axios interceptor** bulunur; `Authorization` başlığına
-  örnek (placeholder) bir `Bearer` değeri ekler ve `401` yanıtında kullanıcıyı uyarır.
-  Gerçek bir API'ye bağlanırken buradaki token'ı kendi değerinizle değiştirin — gerçek
-  token'ları koda gömmek yerine ortam değişkeni (`.env`) kullanın.
-- `restcountries.eu` API'si zamanla kapanmış olabilir; GET örneği çalışmazsa güncel
-  sürüm olan `https://restcountries.com/v3.1/all` adresini kullanabilirsiniz.
-- Depoya yalnızca **kaynak kod** dahildir. Derleme çıktıları (`dist/`, hash'li
-  `app.*.js` / `chunk-vendors.*.js`), `node_modules/` ve Visual Studio dosyaları
-  (`*.dll`, `*.njsproj`) `.gitignore` ile hariç tutulmuştur.
